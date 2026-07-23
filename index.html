@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="El Sendero del Lobo - Naturaleza & Gastronomía. Descubre un destino extraordinario donde paisajes respiran, la comida deliciosa y aventuras inolvidables se reúnen.">
+    <meta name="theme-color" content="#4F6651">
+    
+    <title>El Sendero del Lobo | Naturaleza & Gastronomía</title>
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts: Cormorant Garamond & Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="wolf-logo-loader">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50,10 Q70,30 70,50 Q70,80 50,90 Q30,80 30,50 Q30,30 50,10" fill="none" stroke="#4F6651" stroke-width="2" class="loader-path"/>
+                    <circle cx="40" cy="45" r="3" fill="#4F6651" class="loader-eye"/>
+                    <circle cx="60" cy="45" r="3" fill="#4F6651" class="loader-eye"/>
+                </svg>
+            </div>
+            <p class="loading-text">Reconnecting with nature...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#home" class="logo-link">
+                    <img src="assets/logo.svg" alt="El Sendero del Lobo Logo" class="logo">
+                    <span class="brand-name">El Sendero del Lobo</span>
+                </a>
+            </div>
+            
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Nosotros</a></li>
+                <li><a href="#experiences" class="nav-link">Experiencias</a></li>
+                <li><a href="#restaurant" class="nav-link">Restaurante</a></li>
+                <li><a href="#gallery" class="nav-link">Galería</a></li>
+                <li><a href="#pets" class="nav-link">Mascotas</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+                <li><a href="#reserve" class="cta-button">Reservar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-media">
+            <img src="assets/hero-image.jpg" alt="El Sendero del Lobo - Landscape" class="hero-image" loading="lazy">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title fade-up">Reconnect with Nature. Create Unforgettable Memories.</h1>
+            <p class="hero-subtitle fade-up" style="animation-delay: 0.2s">
+                Discover an extraordinary destination where breathtaking landscapes, delicious food, and unforgettable adventures come together for you and your best friend.
+            </p>
+            
+            <div class="hero-buttons fade-up" style="animation-delay: 0.4s">
+                <a href="#reserve" class="button button-primary">Reserve Now</a>
+                <a href="#experiences" class="button button-secondary">Explore Experiences</a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <svg class="scroll-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M12 5v14M19 12l-7 7-7-7"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image fade-in-on-scroll">
+                    <img src="assets/about-image.jpg" alt="El Sendero del Lobo - About" loading="lazy">
+                </div>
+                
+                <div class="about-content fade-in-on-scroll">
+                    <h2>Our Story</h2>
+                    <p>Nestled in the heart of the mountains, El Sendero del Lobo is more than a destination—it's a sanctuary for those seeking authentic connection with nature and genuine gastronomy.</p>
+                    
+                    <p>Founded on principles of conservation and community, we believe that the best experiences happen when you disconnect from the ordinary and reconnect with what truly matters.</p>
+                    
+                    <div class="features-list">
+                        <div class="feature">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <h3>Nature Conservation</h3>
+                            <p>Protecting the ecosystem we love</p>
+                        </div>
+                        
+                        <div class="feature">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                            </svg>
+                            <h3>Family Experiences</h3>
+                            <p>Creating memories together</p>
+                        </div>
+                        
+                        <div class="feature">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                            </svg>
+                            <h3>Premium Experience</h3>
+                            <p>Luxury meets authenticity</p>
+                        </div>
+                        
+                        <div class="feature">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                            </svg>
+                            <h3>Local Gastronomy</h3>
+                            <p>Authentic flavors from our land</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section class="experiences" id="experiences">
+        <div class="container">
+            <h2 class="section-title fade-in-on-scroll">Unforgettable Experiences</h2>
+            <p class="section-subtitle fade-in-on-scroll">Discover the adventures that await you</p>
+            
+            <div class="experiences-grid">
+                <div class="experience-card fade-in-on-scroll" style="animation-delay: 0s">
+                    <div class="experience-image">
+                        <img src="assets/experience-waterfall.jpg" alt="Waterfall Experience" loading="lazy">
+                        <div class="experience-overlay"></div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Waterfall Hikes</h3>
+                        <p>Explore breathtaking waterfalls hidden in the mountain terrain</p>
+                    </div>
+                </div>
+                
+                <div class="experience-card fade-in-on-scroll" style="animation-delay: 0.1s">
+                    <div class="experience-image">
+                        <img src="assets/experience-trails.jpg" alt="Nature Trails" loading="lazy">
+                        <div class="experience-overlay"></div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Nature Trails</h3>
+                        <p>Guided walks through pristine forests and mountain paths</p>
+                    </div>
+                </div>
+                
+                <div class="experience-card fade-in-on-scroll" style="animation-delay: 0.2s">
+                    <div class="experience-image">
+                        <img src="assets/experience-river.jpg" alt="River Activities" loading="lazy">
+                        <div class="experience-overlay"></div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>River Adventures</h3>
+                        <p>Swimming, wading, and water activities in crystal-clear rivers</p>
+                    </div>
+                </div>
+                
+                <div class="experience-card fade-in-on-scroll" style="animation-delay: 0.3s">
+                    <div class="experience-image">
+                        <img src="assets/experience-camping.jpg" alt="Camping" loading="lazy">
+                        <div class="experience-overlay"></div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Camping Under Stars</h3>
+                        <p>Sleep under the stars in our premium camping areas</p>
+                    </div>
+                </div>
+                
+                <div class="experience-card fade-in-on-scroll" style="animation-delay: 0.4s">
+                    <div class="experience-image">
+                        <img src="assets/experience-photo.jpg" alt="Photography" loading="lazy">
+                        <div class="experience-overlay"></div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Photography Spots</h3>
+                        <p>Capture stunning moments in nature's most picturesque locations</p>
+                    </div>
+                </div>
+                
+                <div class="experience-card fade-in-on-scroll" style="animation-delay: 0.5s">
+                    <div class="experience-image">
+                        <img src="assets/experience-adventure.jpg" alt="Outdoor Activities" loading="lazy">
+                        <div class="experience-overlay"></div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Outdoor Activities</h3>
+                        <p>From hiking to rock climbing, adventures for all levels</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurant Section -->
+    <section class="restaurant" id="restaurant">
+        <div class="container">
+            <div class="restaurant-grid">
+                <div class="restaurant-image fade-in-on-scroll">
+                    <img src="assets/restaurant-hero.jpg" alt="El Sendero del Lobo Restaurant" loading="lazy">
+                </div>
+                
+                <div class="restaurant-content fade-in-on-scroll">
+                    <h2>Culinary Excellence</h2>
+                    <p class="subtitle">Farm-to-table gastronomy celebrating local flavors</p>
+                    
+                    <p>Our restaurant showcases the best of regional cuisine, prepared with fresh, locally-sourced ingredients. Every dish tells a story of our land, our culture, and our commitment to authentic gastronomy.</p>
+                    
+                    <div class="menu-highlights">
+                        <div class="highlight">
+                            <h4>🌿 Fresh Ingredients</h4>
+                            <p>Sourced from local farms and our own organic garden</p>
+                        </div>
+                        
+                        <div class="highlight">
+                            <h4>👨‍🍳 Expert Chefs</h4>
+                            <p>Passionate culinary artists dedicated to flavor and presentation</p>
+                        </div>
+                        
+                        <div class="highlight">
+                            <h4>🍷 Wine Selection</h4>
+                            <p>Curated wines that complement our seasonal menus</p>
+                        </div>
+                        
+                        <div class="highlight">
+                            <h4>🌅 Scenic Dining</h4>
+                            <p>Enjoy meals with views of mountains and valleys</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="button button-primary">View Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pet Friendly Section -->
+    <section class="pets" id="pets">
+        <div class="container">
+            <h2 class="section-title fade-in-on-scroll">Because Adventures Are Better With Your Best Friend</h2>
+            
+            <div class="pets-hero fade-in-on-scroll">
+                <img src="assets/dogs-nature.jpg" alt="Dogs enjoying El Sendero del Lobo" loading="lazy">
+                <div class="pets-overlay"></div>
+            </div>
+            
+            <p class="section-subtitle fade-in-on-scroll">We celebrate the bond between you and your furry companion</p>
+            
+            <div class="pets-features">
+                <div class="pet-card fade-in-on-scroll" style="animation-delay: 0s">
+                    <div class="pet-icon">🐕</div>
+                    <h3>Dogs Welcome</h3>
+                    <p>Your four-legged friends are treated as valued guests</p>
+                </div>
+                
+                <div class="pet-card fade-in-on-scroll" style="animation-delay: 0.1s">
+                    <div class="pet-icon">🏞️</div>
+                    <h3>Open Spaces</h3>
+                    <p>Vast, safe areas where dogs can run and play freely</p>
+                </div>
+                
+                <div class="pet-card fade-in-on-scroll" style="animation-delay: 0.2s">
+                    <div class="pet-icon">💧</div>
+                    <h3>Fresh Water</h3>
+                    <p>Rivers, streams, and water stations throughout</p>
+                </div>
+                
+                <div class="pet-card fade-in-on-scroll" style="animation-delay: 0.3s">
+                    <div class="pet-icon">🛡️</div>
+                    <h3>Safe Environment</h3>
+                    <p>Secure facilities and professional pet care</p>
+                </div>
+                
+                <div class="pet-card fade-in-on-scroll" style="animation-delay: 0.4s">
+                    <div class="pet-icon">🦮</div>
+                    <h3>Pet-Friendly Facilities</h3>
+                    <p>Accommodations designed with your pets in mind</p>
+                </div>
+                
+                <div class="pet-card fade-in-on-scroll" style="animation-delay: 0.5s">
+                    <div class="pet-icon">❤️</div>
+                    <h3>Pet Adventures</h3>
+                    <p>Specially curated experiences for you and your pet</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title fade-in-on-scroll">Gallery</h2>
+            <p class="section-subtitle fade-in-on-scroll">Moments captured in paradise</p>
+            
+            <div class="masonry-gallery" id="masonry">
+                <div class="gallery-item gallery-item-large fade-in-on-scroll">
+                    <img src="assets/gallery-1.jpg" alt="Waterfall landscape" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Waterfalls</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item fade-in-on-scroll">
+                    <img src="assets/gallery-2.jpg" alt="Mountain trail" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Trails</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item fade-in-on-scroll">
+                    <img src="assets/gallery-3.jpg" alt="Dogs playing" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Pet Adventures</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item fade-in-on-scroll">
+                    <img src="assets/gallery-4.jpg" alt="Family experience" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Family Moments</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item gallery-item-large fade-in-on-scroll">
+                    <img src="assets/gallery-5.jpg" alt="Sunset view" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Sunsets</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item fade-in-on-scroll">
+                    <img src="assets/gallery-6.jpg" alt="Forest" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Forest</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item fade-in-on-scroll">
+                    <img src="assets/gallery-7.jpg" alt="Restaurant" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Gastronomy</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item fade-in-on-scroll">
+                    <img src="assets/gallery-8.jpg" alt="Mountain scenery" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Landscape</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title fade-in-on-scroll">Guest Reviews</h2>
+            
+            <div class="testimonials-slider" id="testimonialSlider">
+                <div class="testimonial fade-in-on-scroll">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"An absolutely magical experience. The landscapes are breathtaking, the food is exceptional, and the team made us feel so welcome. We brought our dog and she loved it as much as we did!"</p>
+                    <p class="testimonial-author">— María & Family</p>
+                </div>
+                
+                <div class="testimonial fade-in-on-scroll" style="display: none">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"This place restored my soul. Away from the city chaos, surrounded by nature, great food, and genuine hospitality. Highly recommended for anyone seeking authentic experiences."</p>
+                    <p class="testimonial-author">— Carlos</p>
+                </div>
+                
+                <div class="testimonial fade-in-on-scroll" style="display: none">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"The pet-friendly approach here is genuine. Max had the time of his life playing in the rivers and on the trails. We felt like family, not tourists."</p>
+                    <p class="testimonial-author">— Sofia & Max</p>
+                </div>
+                
+                <div class="testimonial fade-in-on-scroll" style="display: none">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"From the first moment we arrived, the attention to detail was evident. Premium quality with authentic warmth. Worth every penny."</p>
+                    <p class="testimonial-author">— Diego</p>
+                </div>
+                
+                <div class="testimonial fade-in-on-scroll" style="display: none">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"As a photographer, I found paradise here. Every corner is a masterpiece. The team understood my passion and guided me to perfect spots."</p>
+                    <p class="testimonial-author">— Alejandra</p>
+                </div>
+            </div>
+            
+            <div class="testimonial-nav">
+                <button class="testimonial-prev" id="testimonialPrev">←</button>
+                <div class="testimonial-dots" id="testimonialDots"></div>
+                <button class="testimonial-next" id="testimonialNext">→</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reserve Section -->
+    <section class="reserve" id="reserve">
+        <div class="reserve-content fade-in-on-scroll">
+            <h2>Ready for Your Next Adventure?</h2>
+            <p>Reserve your visit today and create unforgettable memories in paradise</p>
+            
+            <div class="reserve-buttons">
+                <a href="https://wa.me/your-number" class="button button-primary" target="_blank">
+                    <span>💬</span> WhatsApp Reservation
+                </a>
+                <a href="tel:+your-number" class="button button-secondary">
+                    <span>📞</span> Call Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title fade-in-on-scroll">Get In Touch</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info fade-in-on-scroll">
+                    <div class="contact-card">
+                        <h3>📍 Location</h3>
+                        <p>Mountain region, [City], [State]</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <h3>⏰ Hours</h3>
+                        <p>Daily 8:00 AM - 8:00 PM</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <h3>📞 Contact</h3>
+                        <p><a href="tel:+your-number">+Your Number</a></p>
+                        <p><a href="mailto:info@senderodellobos.com">info@senderodellobos.com</a></p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link">Instagram</a>
+                            <a href="#" class="social-link">Facebook</a>
+                            <a href="#" class="social-link">WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form fade-in-on-scroll">
+                    <form id="contactForm">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="tel" placeholder="Phone Number">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="button button-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="assets/logo.svg" alt="Logo" class="footer-logo">
+                    <p class="footer-tagline">Naturaleza & Gastronomía</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experiences">Experiences</a></li>
+                        <li><a href="#restaurant">Restaurant</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#pets">Pet Friendly</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow</h4>
+                    <div class="footer-social">
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 El Sendero del Lobo. All rights reserved.</p>
+                <p>Crafted by Rafael's Agency | Premium Digital Design</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/scroll-effects.js" defer></script>
+</body>
+</html>
