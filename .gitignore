@@ -1,0 +1,106 @@
+# ===================================
+# GIT IGNORE - EL SENDERO DEL LOBO
+# ===================================
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+.pnp
+.pnp.js
+
+# Production
+dist/
+build/
+out/
+
+# Development
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Build tools
+webpack.config.js
+gulpfile.js
+Gruntfile.js
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+
+# OS generated files
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+desktop.ini
+
+# Cache
+.cache/
+.eslintcache
+.stylelintcache
+
+# Deployment
+.netlify/
+.vercel/
+.firebase/
+
+# Repository specific
+.git/
+.gitignore
+.github/
+
+# Backup files from editors
+*.orig
+*.rej
+
+# Local development
+localhost/
+local-server/
+
+# Large files (images should be optimized)
+*.psd
+*.ai
+*.sketch
+*.fig
+
+# Compiled files
+*.css.map
+*.js.map
+
+# Security
+.env
+.env.*
+!.env.example
+
+# Documentation temporary
+docs_backup/
