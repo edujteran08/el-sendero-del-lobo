@@ -1,0 +1,162 @@
+{
+  "name": "el-sendero-del-lobo",
+  "version": "1.0.0",
+  "description": "Premium nature & gastronomy website - A world-class destination showcasing breathtaking landscapes, authentic gastronomy, and unforgettable family experiences",
+  "author": "Rafael's Agency <info@rafaelsagency.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/edujteran08/el-sendero-del-lobo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edujteran08/el-sendero-del-lobo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/edujteran08/el-sendero-del-lobo/issues"
+  },
+  "keywords": [
+    "website",
+    "premium",
+    "nature",
+    "gastronomy",
+    "ecotourism",
+    "portfolio",
+    "responsive",
+    "animations",
+    "parallax",
+    "html5",
+    "css3",
+    "javascript",
+    "accessibility",
+    "seo",
+    "performance"
+  ],
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "dev:node": "npx http-server",
+    "dev:live": "npx live-server",
+    "build": "echo 'No build process required - vanilla HTML/CSS/JS'",
+    "lint:html": "npx htmlhint index.html",
+    "lint:css": "npx stylelint 'css/**/*.css'",
+    "lint:js": "npx eslint 'js/**/*.js'",
+    "test": "echo 'Tests can be added here'",
+    "analyze": "npx lighthouse index.html --view",
+    "serve": "python -m http.server 8000"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
+    "eslint": "^8.44.0",
+    "htmlhint": "^1.1.4",
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2",
+    "lighthouse": "^9.6.8",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0",
+    "prettier": "^2.8.8",
+    "sass": "^1.62.1",
+    "stylelint": "^15.9.0",
+    "stylelint-config-standard": "^33.0.0",
+    "terser": "^5.17.3"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "index.html",
+    "css/",
+    "js/",
+    "assets/",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "accessibility": {
+    "wcag": "2.1 AA",
+    "aria": true,
+    "semanticHtml": true,
+    "keyboardNavigation": true
+  },
+  "performance": {
+    "target": {
+      "lighthouse": {
+        "performance": 90,
+        "accessibility": 95,
+        "bestPractices": 95,
+        "seo": 100
+      },
+      "coreWebVitals": {
+        "lcp": 2500,
+        "fid": 100,
+        "cls": 0.1
+      }
+    }
+  },
+  "design": {
+    "framework": "vanilla",
+    "preprocessor": "none",
+    "typography": {
+      "heading": "Cormorant Garamond",
+      "body": "Inter"
+    },
+    "colorPalette": {
+      "forestGreen": "#4F6651",
+      "deepOlive": "#6C7B59",
+      "darkBrown": "#3B2B23",
+      "earthBeige": "#D9CDBD",
+      "warmCream": "#F6F2EB",
+      "stoneGray": "#8B8A86",
+      "softGold": "#D4AF37"
+    }
+  },
+  "features": [
+    "Cinematic hero section",
+    "Scroll-triggered animations",
+    "Parallax effects",
+    "Testimonials slider",
+    "Masonry gallery",
+    "Mobile-responsive",
+    "Glassmorphism navigation",
+    "Dark mode support",
+    "Lazy loading",
+    "SEO optimized",
+    "WCAG accessible",
+    "Zero dependencies"
+  ],
+  "sections": [
+    "Hero",
+    "About",
+    "Experiences",
+    "Restaurant",
+    "Pet Friendly",
+    "Gallery",
+    "Testimonials",
+    "Contact",
+    "Footer"
+  ],
+  "socialMedia": {
+    "github": "https://github.com/edujteran08",
+    "instagram": "@elsenderodellobo",
+    "facebook": "elsenderodellobo"
+  },
+  "contact": {
+    "agency": "Rafael's Agency",
+    "email": "info@rafaelsagency.com",
+    "tagline": "Premium digital experiences for luxury brands"
+  },
+  "brand": {
+    "name": "El Sendero del Lobo",
+    "tagline": "Naturaleza & Gastronomía",
+    "description": "Exclusive eco-tourism destination combining breathtaking natural landscapes, authentic gastronomy, and unforgettable family experiences"
+  },
+  "metadata": {
+    "created": "2026-07-23",
+    "lastUpdated": "2026-07-23",
+    "version": "1.0.0",
+    "status": "Production"
+  }
+}
